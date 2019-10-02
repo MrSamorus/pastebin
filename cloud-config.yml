@@ -1,0 +1,18 @@
+#cloud-config
+
+hostname: rancher
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApPSZuD509JSBPYQGDeK7+bcI6W5hq9uarpeU5+BYvMYM+H01x5vnX7Bgxeif1gauHGzVEVOOmUFVCtEyr4SLfAlQU+c1/Z8zH8c6O63XQpcgH8OcNbnIi4aDcTwTO/apeCMTpOWEqy7uNHhJpKAV0bwcHYAmwDbb/kbDWwiDH8gOwVO2YB3muur2WuewZtP3y5d
+rancher:
+  network:
+    dns:
+      nameservers:
+        - 1.1.1.1
+        - 8.8.8.8
+      override: true
+    interfaces:
+      eth0:
+        address: 192.168.101.151/24
+        gateway: 192.168.101.1
+        mtu: 1500
+        dhcp: false
