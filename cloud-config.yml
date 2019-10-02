@@ -1,8 +1,8 @@
 #cloud-config
 
-hostname: rancher
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA89WI+qtysM0CsRcCwys8PBvXX4DUe4cWutZOeH3+kBQmClD8pTd/yDz5LdP/yZnSDGEl/0lqgQWfMZ+4G2ouAsUpJb/9XI6wo2nklmaP/8vJTKsDIi+lU1K5ocBshvrpU/O7Q4SQRCLrKVvGU9u3k86GJ/ojiGdHY/icnnbyo1GochEfHSbbwnwQ9cTxeE656s21AN3TWPxaA9A6F2NmZqTVPetr9WFNQI3MMqie6odgGeS4POtXJMWs03VDzoW5jAbwZp1nRJeIZt1Lfj+1Ac5a2urIwEbUzopd1AGr++SkoO2+B1+d/uHLHbkJEdra7vrbWVYa8uqz7VLO/2z0hw==
+hostname: rancher
 rancher:
   network:
     interfaces:
